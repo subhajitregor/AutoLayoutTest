@@ -63,7 +63,7 @@ class CodeGeneratorBasicDetails: UIViewController, UITextFieldDelegate, UICollec
             employeeDetailsViewHeight.constant = 0
         }
         
-        
+        self.view.layoutIfNeeded()
 
     }
     override func didReceiveMemoryWarning()
@@ -76,10 +76,10 @@ class CodeGeneratorBasicDetails: UIViewController, UITextFieldDelegate, UICollec
     override func viewDidLayoutSubviews()
     {
 
-        let height = taxMonthCollectionView.collectionViewLayout.collectionViewContentSize.height
-        collectionViewHeight.constant = height
-        
-        taxMonthLbl.sizeToFit()
+//        let height = taxMonthCollectionView.collectionViewLayout.collectionViewContentSize.height
+//        collectionViewHeight.constant = height
+//        
+//        taxMonthLbl.sizeToFit()
         
 //        self.view.addConstraint(NSLayoutConstraint(item: taxMonthView, attribute: .top, relatedBy: .equal, toItem: taxMonthLbl, attribute: .top, multiplier: 1.0, constant: 20))
         
