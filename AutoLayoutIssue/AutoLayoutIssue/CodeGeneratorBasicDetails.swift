@@ -72,6 +72,15 @@ class CodeGeneratorBasicDetails: UIViewController, UITextFieldDelegate, UICollec
         // Dispose of any resources that can be recreated.
     }
     
+    override func willRotate(to toInterfaceOrientation: UIInterfaceOrientation, duration: TimeInterval) {
+        if (UIInterfaceOrientationIsPortrait(toInterfaceOrientation)) {
+            collectionViewHeight.constant = 220;
+        }
+        else {
+            collectionViewHeight.constant = 120;
+        }
+    }
+    
     
     override func viewDidLayoutSubviews()
     {
